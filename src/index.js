@@ -36,7 +36,7 @@ refs.breedSelect.addEventListener('change', onBreedSelect);
 
 function onBreedSelect(event) {
   onDelClass(refs.loader);
-  for (key in refs) {
+  for (const key in refs) {
     if (key !== 'loader') {
       onSetClass(refs[key]);
     }
