@@ -30,9 +30,7 @@ fetchBreeds().then(breeds => {
   new SlimSelect({
     select: refs.breedSelect,
   });
-}).catch(() => {
-  onError();
-})
+}).catch(onError)
 
 refs.breedSelect.addEventListener('change', onBreedSelect);
 
@@ -60,9 +58,7 @@ function onBreedSelect(event) {
         <p><b>Temperament:</b> ${breeds[0].temperament}</p>
       </div>`;
     onDelClass(refs.catInfo);
-  }).catch(() => {
-    onError();
-  })
+  }).catch(onError)
 }
 
 function onError() {
