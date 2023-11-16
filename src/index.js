@@ -10,7 +10,7 @@ const refs = {
   errorEl: document.querySelector('.error'),
 }
 
-for (key in refs) {
+for (const key in refs) {
   if (key !== 'breedSelect') {
     onSetClass(refs[key]);
   }
