@@ -63,7 +63,7 @@ function onBreedSelect(event) {
 
 function onError() {
   Notiflix.Notify.failure('Oops! Something went wrong! Try reloading the page!', {
-    position: 'center-top',
+    position: 'left-top',
     width: '400px',
     timeout: 5000,
   })
